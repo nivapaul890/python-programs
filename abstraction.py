@@ -4,7 +4,7 @@ class shape(ABC):
     @abstractmethod
     def area(self):
         print('calculating the area')
-class Circle(shape):
+class Circles(shape):
     def __init__(self,r):
         self.r=r
     def area(self):
@@ -14,7 +14,7 @@ class Square(shape):
         self.s=s
     def area(self):
         print('area of square is  ',self.s**2)
-c=Circle(4)
+c=Circles(4)
 c.area()
 s=Square(6)
 s.area()
